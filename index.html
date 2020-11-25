@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>
+            MovieSearcher
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $(".column").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+</script>
+</head>
+<body>
+    <div class="topnav flex">
+        <div class="item">
+                <h2>MovieSearcher</h2>
+        </div>
+                <div class="item">
+                        <input type="text" placeholder="Search.." id="myInput" onkeyup="Function()">
+                </div>
+                <div class="item">
+                        <select id="selcar" name="selcards">
+                                <option value="movies" id="movies">Movies</option>
+                                <option value="music" id="music">Music</option>
+                                <option value="shows" id="shows">Shows</option>
+                        </select>
+                </div>
+                <div class="item">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+      </div>
+    <div class="cards">
+            <div class="column">
+                <div class="card">
+                        <center><img src="images/Billu barber.jpg" alt="Billu Barber" style="width:50%"></center>
+                        <div class="container">
+                                <center><h4><b>Billu Barber</b></h4>
+                                <a href="Billubarber.html"><button class="butn"><font size="2rem">Movie Details</font></button></a></center>
+                        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                        <center><img src="images/Dil chahta hai.jpg" alt="Dil chahta hai" style="width:50%"></center>
+                        <div class="container">
+                                <center><h4><b>Dil chahta hai</b></h4>
+                                <a href="Dilchahtahai.html"><button class="butn"><font size="2rem">Movie Details</font></button></a></center>
+                        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                        <center><img src="images/Dil toh pagal hai.jpg" alt="Dil toh pagal hai" style="width:50%"></center>
+                        <div class="container">
+                                <center><h4><b>Dil toh pagal hai</b></h4>
+                                <a href="Diltohpagalhai.html"><button class="butn"><font size="2rem">Movie Details</font></button></a></center>
+                        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                        <center><img src="images/Jab we met.jpg" alt="Jab we met" style="width:50%"></center>
+                        <div class="container">
+                                <center><h4><b>Jab we met</b></h4>
+                                <a href="Jabwemet.html"><button class="butn"><font size="2rem">Movie Details</font></button></a></center>
+                        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                        <center><img src="images/Kal ho na ho.jpg" alt="Kal ho na ho" style="width:50%"></center>
+                        <div class="container">
+                                <center><h4><b>Kal ho na ho</b></h4>
+                                <a href="Kalhonaho.html"><button class="butn"><font size="2rem">Movie Details</font></button></a></center>
+                        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                        <center><img src="images/Koi mil gya.jpg" alt="Koi mil gya" style="width:50%"></center>
+                        <div class="container">
+                                <center><h4><b>Koi mil gya</b></h4>
+                                <a href="Koimilgya.html"><button class="butn"><font size="2rem">Movie Details</font></button></a></center>
+                        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                        <center><img src="images/Lakshya.jpg" alt="Lakshya" style="width:50%"></center>
+                        <div class="container">
+                                <center><h4><b>Lakshya</b></h4>
+                                <a href="Lakshya.html"><button class="butn"><font size="2rem">Movie Details</font></button></a></center>
+                        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                        <center><img src="images/Misson kashmir.jpeg" alt="Mission kashmir" style="width:50%"></center>
+                        <div class="container">
+                                <center><h4><b>Mission kashmir</b></h4>
+                                <a href="Missionkashmir.html"><button class="butn"><font size="2rem">Movie Details</font></button></a></center>
+                        </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
